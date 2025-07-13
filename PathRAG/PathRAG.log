@@ -1,0 +1,26 @@
+2025-07-13 13:12:32,147 - PathRAG - INFO - Logger initialized for working directory: C:/Users/Kevin/Documents/Work/SCP/AI/PathRAG/PathRAG
+2025-07-13 13:12:32,148 - PathRAG - INFO - Load KV llm_response_cache with 0 data
+2025-07-13 13:12:32,148 - PathRAG - INFO - Load KV full_docs with 0 data
+2025-07-13 13:12:32,148 - PathRAG - INFO - Load KV text_chunks with 0 data
+2025-07-13 13:14:28,103 - PathRAG - INFO - Logger initialized for working directory: C:/Users/Kevin/Documents/Work/SCP/AI/PathRAG/PathRAG
+2025-07-13 13:14:28,103 - PathRAG - INFO - Load KV llm_response_cache with 0 data
+2025-07-13 13:14:28,104 - PathRAG - INFO - Load KV full_docs with 0 data
+2025-07-13 13:14:28,104 - PathRAG - INFO - Load KV text_chunks with 0 data
+2025-07-13 13:17:17,327 - PathRAG - INFO - [New Docs] inserting 1 docs
+2025-07-13 13:17:19,103 - PathRAG - INFO - [New Chunks] inserting 2 chunks
+2025-07-13 13:17:19,103 - PathRAG - INFO - Inserting 2 vectors to chunks
+2025-07-13 13:17:20,564 - PathRAG - INFO - [Entity Extraction]...
+2025-07-13 13:18:15,183 - PathRAG - INFO - Inserting entities into storage...
+2025-07-13 13:18:15,185 - PathRAG - INFO - Inserting relationships into storage...
+2025-07-13 13:18:15,187 - PathRAG - INFO - Inserting 34 vectors to entities
+2025-07-13 13:18:16,666 - PathRAG - INFO - Inserting 23 vectors to relationships
+2025-07-13 13:18:17,636 - PathRAG - INFO - Writing graph with 34 nodes, 23 edges
+2025-07-13 13:18:20,751 - PathRAG - INFO - kw_prompt result:
+2025-07-13 13:18:21,100 - PathRAG - INFO - Local query uses 34 entites, 15 relations, 2 text units
+2025-07-13 13:18:21,707 - PathRAG - INFO - Global query uses 25 entites, 23 relations, 2 text units
+2025-07-13 14:23:57,787 - PathRAG - INFO - Logger initialized for working directory: C:/Users/Kevin/Documents/Work/SCP/AI/PathRAG/PathRAG
+2025-07-13 14:23:57,789 - PathRAG - INFO - Load KV llm_response_cache with 1 data
+2025-07-13 14:23:57,790 - PathRAG - INFO - Load KV full_docs with 1 data
+2025-07-13 14:23:57,791 - PathRAG - INFO - Load KV text_chunks with 2 data
+2025-07-13 14:23:57,794 - PathRAG - INFO - Loaded graph from C:/Users/Kevin/Documents/Work/SCP/AI/PathRAG/PathRAG\graph_chunk_entity_relation.graphml with 34 nodes, 23 edges
+2025-07-13 14:24:07,450 - PathRAG - WARNING - All docs are already in the storage

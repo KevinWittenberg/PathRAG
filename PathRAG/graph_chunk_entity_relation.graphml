@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="&quot;KWANTITATIEF ONDERZOEK&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Kwantitatief onderzoek is een veelgebruikte methode waarvoor het SCP statistische gegevens verzamelt en analyseert."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;AEDES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Aedes is an umbrella organization of housing corporations that criticized PBL regarding cost estimations for greening housing."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;KLIMAAT- EN ENERGIEVERKENNING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Klimaat- en Energieverkenning is an annual analysis mandated by the Climate Act, focused on climate and energy issues conducted by PBL."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;MINISTERIE VAN ECONOMISCHE ZAKEN EN KLIMAAT&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Ministry of Economic Affairs and Climate is one of the departments that can request research from PBL regarding environmental and nature-related issues."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;INTERDEPARTEMENTAAL BELEID&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Interdepartementaal beleid verwijst naar de samenwerking van verschillende ministeries in Nederland, een belangrijk onderdeel van het onderzoek van het SCP."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Het Sociaal en Cultureel Planbureau (SCP) is een Nederlands interdepartementaal, wetenschappelijk instituut dat sociaal-wetenschappelijk onderzoek verricht en rapporteert aan de overheid en maatschappelijke organisaties."&lt;SEP&gt;"The Social and Cultural Planning Bureau, also located in the same building as PBL, focuses on social and cultural policy research."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b&lt;SEP&gt;chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;BALANS VAN DE LEEFOMGEVING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Balans van de Leefomgeving is a biennial report published by PBL that assesses the state of the environment and nature in the Netherlands."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;MINISTERIE VAN BUITENLANDSE ZAKEN&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Ministry of Foreign Affairs is another department that may approach PBL for research on various issues, including environmental concerns."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;DINEKE MULOCK&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Dineke Mulock served as the interim director of PBL from May 15, 2008, to September 30, 2008."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;SOCIAAL EN CULTUREEL RAPPORT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Het Sociaal en Cultureel Rapport is een door het SCP vastgesteld rapport dat de situatie van het sociaal en cultureel welzijn in Nederland om de twee jaar beschrijft."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;CENTRAAL PLANBUREAU&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Het Centraal Planbureau (CPB) is het oudste planbureau in Nederland, gericht op economische ontwikkelingen en adviseert de overheid."&lt;SEP&gt;"The Central Planning Bureau is a research institute in the Netherlands that shares the office building with PBL, focusing on different aspects of economic policy."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b&lt;SEP&gt;chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;RAAD VOOR DE LEEFOMGEVING EN INFRASTRUCTUUR&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Council for the Environment and Infrastructure shares office space with PBL, advising on environmental and infrastructural issues."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;NATUUR- EN RUIMTELIJKE VERKENNINGEN&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Natuur- en Ruimtelijke Verkenningen is another future exploration report released by PBL, focusing on nature and spatial planning."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;PLANBUREAU VOOR DE LEEFOMGEVING&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Het Planbureau voor de Leefomgeving (PBL) is verantwoordelijk voor strategische beleidsanalyses op het gebied van milieu, natuur en ruimte en werkt voor meerdere departementen."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;MARKO HEKKERT&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Marko Hekkert is the current director of PBL, appointed on January 1, 2023, succeeding Hans Mommaas."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;MINISTERIE VAN INFRASTRUCTUUR EN WATERSTAAT&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Ministry of Infrastructure and Water Management is the governmental department responsible for overseeing PBL and environmental policies in the Netherlands."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;A.J.M. VAN TIENEN&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A.J.M. van Tienen was de directeur van het SCP van 1974 tot 1978."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;MAARTEN HAJER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Maarten Hajer was the director of PBL from October 1, 2008, until October 1, 2015."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;MINISTERIE VAN BINNENLANDSE ZAKEN EN KONINKRIJKSRELATIES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Ministry of the Interior and Kingdom Relations can also request PBL to conduct research on environmental and nature matters."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;KWALITATIEF ONDERZOEK&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Kwalitatief onderzoek omvat de methoden die het SCP gebruikt om diepgaand inzicht te krijgen in sociale en culturele fenomenen."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;WETENSCHAPPELIJK ONDERZOEK&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Wetenschappelijk onderzoek is de methodologie die het SCP toepast voor het verrichten van onderzoek onafhankelijk en op basis van data."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;ADRIAAN VAN DER STAAY&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Adriaan van der Staay was de directeur van het SCP van 1978 tot 1998."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;PBL&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"PBL is an independent research institute in the Netherlands focused on the fields of environment, nature, and space, functioning under the ministry of Infrastructure and Water Management."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;KIM PUTTERS&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Kim Putters was de directeur van het SCP van 15 juni 2013 tot 1 juni 2022."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;HANS MOMMAAS&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Hans Mommaas served as the director of PBL from November 1, 2015, until his term ended on November 1, 2022."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;KONINKLIJK BESLUIT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Het Koninklijk Besluit is de officiële documenten waaronder het SCP is opgericht op 30 maart 1973 en de beleidsbasis vormt voor de organisatie."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;AANWIJZINGEN VOOR DE PLANBUREAUS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"De 'Aanwijzingen voor de Planbureaus' zijn richtlijnen die de werking van de planbureaus in Nederland bepalen en zijn van invloed op hun interdepartementale functies."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;MEMORANDUM QUARTAIRE SECTOR&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Het Memorandum Quartaire sectort is een document dat de bevindingen en analyses van het SCP over de kwartaire sector elke vier jaar presenteert."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;PAUL SCHNABEL&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Paul Schnabel was de directeur van het SCP van 1998 tot 2013."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;KAREN VAN OUDENHOVEN&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Karen van Oudenhoven is de huidige directeur van het SCP sinds 1 oktober 2022."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;DEN HAAG&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Den Haag is de locatie waar het Planbureau voor de Leefomgeving (PBL) is gevestigd, het is een belangrijke stad voor de Nederlandse overheid."&lt;SEP&gt;"Den Haag is the location where the PBL is housed, along with other research institutes like the Central Planning Bureau."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b&lt;SEP&gt;chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;SOCIALE STAAT VAN NEDERLAND&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"De Sociale staat van Nederland is een jaarlijkse publicatie van het SCP die ontwikkelingen in het sociaal en cultureel welzijn vastlegt."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <node id="&quot;KLIMAATWET&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Klimaatwet is a legislative framework aimed at addressing climate change and establishing protocols for climate-related analyses by research institutes like PBL."&lt;SEP&gt;"Klimaatwet is legislation dictating regular analyses of climate and energy by institutes like PBL."</data>
+      <data key="d2">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </node>
+    <node id="&quot;MAATSCHAPPELIJKE URGENTIE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Maatschappelijke urgentie verwijst naar de noodzaak voor onderzoeksthema's die het SCP kiest, wat impact en relevantie benadrukt."</data>
+      <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </node>
+    <edge source="&quot;KWANTITATIEF ONDERZOEK&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Het SCP past kwantitatief onderzoek toe om objectieve gegevens te verzamelen en analyses uit te voeren."</data>
+      <data key="d5">"onderzoeksstrategie, dataverzameling"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;AEDES&quot;" target="&quot;PBL&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"Aedes criticized PBL's cost estimations for greening, highlighting a tension between the organization and the housing sector."</data>
+      <data key="d5">"criticism, economic implications"</data>
+      <data key="d6">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </edge>
+    <edge source="&quot;INTERDEPARTEMENTAAL BELEID&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Het SCP onderzoekt interdepartementaal beleid om de uitvoering en evaluatie ervan te verbeteren."</data>
+      <data key="d5">"beleidsanalyse, samenwerking"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;" target="&quot;AANWIJZINGEN VOOR DE PLANBUREAUS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"De werking en functies van het SCP worden bepaald door de 'Aanwijzingen voor de Planbureaus', die richtlijnen geven voor interdepartementale samenwerking."</data>
+      <data key="d5">"regelgeving, interdepartementale samenwerking"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;" target="&quot;KONINKLIJK BESLUIT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Het SCP is opgericht via het Koninklijk Besluit, wat de formele basis biedt voor de organisatie en zijn functies."</data>
+      <data key="d5">"oprichting, juridische basis"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;" target="&quot;CENTRAAL PLANBUREAU&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"SCP en CPB zijn beide planbureaus die als officiële organisaties advies uitbrengen aan de overheid en actief onderzoek uitvoeren."</data>
+      <data key="d5">"onderzoeksinstellingen, overheidsadvies"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;" target="&quot;PLANBUREAU VOOR DE LEEFOMGEVING&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"SCP en PBL zijn beide deel van de Rijksoverheid en richten zich op wetenschappelijk onderzoek en beleidsadvies."</data>
+      <data key="d5">"onderzoeksinstellingen, overheidsadvies"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;DINEKE MULOCK&quot;" target="&quot;PBL&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Dineke Mulock briefly served as interim director of PBL, marking an important transitional period in its leadership."</data>
+      <data key="d5">"leadership, transitional role"</data>
+      <data key="d6">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </edge>
+    <edge source="&quot;SOCIAAL EN CULTUREEL RAPPORT&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Het SCP stelt het Sociaal en Cultureel Rapport op als onderdeel van zijn kerntaken, om de situatie van sociaal en cultureel welzijn te evalueren."</data>
+      <data key="d5">"onderzoeksproduct, evaluatie"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;PLANBUREAU VOOR DE LEEFOMGEVING&quot;" target="&quot;DEN HAAG&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Het PBL is gevestigd in Den Haag, wat een belangrijke locatie voor de Nederlandse overheid is."</data>
+      <data key="d5">"locatie, overheidsinstantie"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;MARKO HEKKERT&quot;" target="&quot;PBL&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Marko Hekkert is the current director of PBL, overseeing its operations as of January 1, 2023."</data>
+      <data key="d5">"leadership, organizational structure"</data>
+      <data key="d6">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </edge>
+    <edge source="&quot;A.J.M. VAN TIENEN&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"A.J.M. van Tienen was de directeur van het Sociaal en Cultureel Planbureau in de vroege jaren van zijn oprichting."</data>
+      <data key="d5">"leiding, geschiedenis"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;MAARTEN HAJER&quot;" target="&quot;PBL&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Maarten Hajer was the director of PBL prior to Hans Mommaas, contributing to its organizational progression."</data>
+      <data key="d5">"leadership, organizational history"</data>
+      <data key="d6">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </edge>
+    <edge source="&quot;KWALITATIEF ONDERZOEK&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Het SCP gebruikt kwalitatief onderzoek voor diepgaand inzicht in sociaal-culturele kwesties."</data>
+      <data key="d5">"onderzoeksstrategie, diepgang"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;WETENSCHAPPELIJK ONDERZOEK&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Het SCP verricht wetenschappelijk onderzoek als fundament voor zijn advies- en rapportageactiviteiten."</data>
+      <data key="d5">"onderzoeksbasis, onafhankelijkheid"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;ADRIAAN VAN DER STAAY&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Adriaan van der Staay had een lange termijn leiding van het SCP en beïnvloedde de richting van de organisatie als directeur."</data>
+      <data key="d5">"leiding, geschiedenis"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;KIM PUTTERS&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Kim Putters diende als directeur tot 2022 en had invloed op het beleid en onderzoek van het SCP tijdens zijn termijn."</data>
+      <data key="d5">"leiding, geschiedenis"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;HANS MOMMAAS&quot;" target="&quot;PBL&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Hans Mommaas served as the director of PBL before Marko Hekkert, leading the organization from 2015 to 2022."</data>
+      <data key="d5">"leadership, organizational history"</data>
+      <data key="d6">chunk-9485ea3c0ed15fac87d723106fd9974b</data>
+    </edge>
+    <edge source="&quot;MEMORANDUM QUARTAIRE SECTOR&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Het SCP publiceert het Memorandum Quartaire sector om elke vier jaar bevindingen over de kwartaire sector te presenteren."</data>
+      <data key="d5">"onderzoeksproduct, rapportage"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;PAUL SCHNABEL&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Paul Schnabel was directeur van het SCP en speelde een essentiele rol in de ontwikkeling van sociaal-wetenschappelijk onderzoek in Nederland."</data>
+      <data key="d5">"leiding, geschiedenis"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;KAREN VAN OUDENHOVEN&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Karen van Oudenhoven is de huidige directeur van het SCP en zet de wetenschappelijke en onafhankelijke onderzoekstraditie voort."</data>
+      <data key="d5">"leiding, toekomst"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;SOCIALE STAAT VAN NEDERLAND&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Het SCP publiceert de Sociale staat van Nederland om jaarlijkse ontwikkelingen in de samenleving te rapporteren."</data>
+      <data key="d5">"onderzoeksproduct, rapportage"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+    <edge source="&quot;MAATSCHAPPELIJKE URGENTIE&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Het SCP selecteert onderzoeksthema's op basis van maatschappelijke urgentie om relevantie en impact te waarborgen."</data>
+      <data key="d5">"onderzoekfocus, relevantie"</data>
+      <data key="d6">chunk-50ec046df17286f3cd8e64944faf25bb</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,29 @@
+accelerate
+aioboto3
+aiohttp
+gensim>=4.3,<5
+
+# database packages
+graspologic
+chroma-hnswlib>=0.7.6
+nano-vectordb
+neo4j
+networkx
+ollama
+openai
+oracledb
+psycopg[binary,pool]
+pymilvus
+pymongo
+pymysql
+pyvis
+# lmdeploy[all]
+sqlalchemy
+tenacity
+
+
+# LLM packages
+tiktoken
+torch
+transformers
+xxhash
