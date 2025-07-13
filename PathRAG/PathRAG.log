@@ -24,3 +24,23 @@
 2025-07-13 14:23:57,791 - PathRAG - INFO - Load KV text_chunks with 2 data
 2025-07-13 14:23:57,794 - PathRAG - INFO - Loaded graph from C:/Users/Kevin/Documents/Work/SCP/AI/PathRAG/PathRAG\graph_chunk_entity_relation.graphml with 34 nodes, 23 edges
 2025-07-13 14:24:07,450 - PathRAG - WARNING - All docs are already in the storage
+2025-07-13 14:51:56,959 - PathRAG - INFO - Logger initialized for working directory: C:/Users/Kevin/Documents/Work/SCP/AI/PathRAG/PathRAG
+2025-07-13 14:51:56,969 - PathRAG - INFO - Load KV llm_response_cache with 1 data
+2025-07-13 14:51:56,970 - PathRAG - INFO - Load KV full_docs with 1 data
+2025-07-13 14:51:56,971 - PathRAG - INFO - Load KV text_chunks with 2 data
+2025-07-13 14:51:57,002 - PathRAG - INFO - Loaded graph from C:/Users/Kevin/Documents/Work/SCP/AI/PathRAG/PathRAG\graph_chunk_entity_relation.graphml with 34 nodes, 23 edges
+2025-07-13 14:52:00,340 - PathRAG - WARNING - All docs are already in the storage
+2025-07-13 14:52:44,241 - PathRAG - INFO - [New Docs] inserting 1 docs
+2025-07-13 14:52:44,537 - PathRAG - INFO - [New Chunks] inserting 1 chunks
+2025-07-13 14:52:44,537 - PathRAG - INFO - Inserting 1 vectors to chunks
+2025-07-13 14:52:45,498 - PathRAG - INFO - [Entity Extraction]...
+2025-07-13 14:53:13,510 - PathRAG - INFO - Inserting entities into storage...
+2025-07-13 14:53:13,511 - PathRAG - INFO - Inserting relationships into storage...
+2025-07-13 14:53:13,512 - PathRAG - WARNING - Didn't extract any relationships
+2025-07-13 14:53:13,512 - PathRAG - INFO - Inserting 6 vectors to entities
+2025-07-13 14:53:14,355 - PathRAG - INFO - Inserting 0 vectors to relationships
+2025-07-13 14:53:14,355 - PathRAG - WARNING - You insert an empty data to vector DB
+2025-07-13 14:53:14,364 - PathRAG - INFO - Writing graph with 40 nodes, 23 edges
+2025-07-13 14:53:23,883 - PathRAG - INFO - kw_prompt result:
+2025-07-13 14:53:24,361 - PathRAG - INFO - Local query uses 38 entites, 15 relations, 3 text units
+2025-07-13 14:53:24,813 - PathRAG - INFO - Global query uses 25 entites, 23 relations, 2 text units

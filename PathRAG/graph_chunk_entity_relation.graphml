@@ -178,6 +178,36 @@
       <data key="d1">"Maatschappelijke urgentie verwijst naar de noodzaak voor onderzoeksthema's die het SCP kiest, wat impact en relevantie benadrukt."</data>
       <data key="d2">chunk-50ec046df17286f3cd8e64944faf25bb</data>
     </node>
+    <node id="&quot;TEST&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"'Test' refers to an event or action that is being used to assess something, in this case possibly the validity of the statement or system."</data>
+      <data key="d2">chunk-1ae534def9c3dd200f24ea153d2f1058</data>
+    </node>
+    <node id="&quot;DIT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"'Dit' refers to the Dutch word for 'this', possibly indicating the location or subject of the statement."</data>
+      <data key="d2">chunk-1ae534def9c3dd200f24ea153d2f1058</data>
+    </node>
+    <node id="&quot;NIET&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"'Niet' is a negation in Dutch meaning 'not', indicating the absence of knowledge in this context."</data>
+      <data key="d2">chunk-1ae534def9c3dd200f24ea153d2f1058</data>
+    </node>
+    <node id="&quot;IK&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"'Ik' is the Dutch word for 'I', referring to the speaker's perspective in the statement."</data>
+      <data key="d2">chunk-1ae534def9c3dd200f24ea153d2f1058</data>
+    </node>
+    <node id="&quot;DIT IS EEN TEST IK WEET NIET&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"The phrase 'Dit is een test ik weet niet' indicates that the content is a test statement and lacks identifiable entities."</data>
+      <data key="d2">chunk-1ae534def9c3dd200f24ea153d2f1058</data>
+    </node>
+    <node id="&quot;WEET&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"'Weet' translates to 'know', indicating a state of knowledge or awareness related to the statement."</data>
+      <data key="d2">chunk-1ae534def9c3dd200f24ea153d2f1058</data>
+    </node>
     <edge source="&quot;KWANTITATIEF ONDERZOEK&quot;" target="&quot;SOCIAAL EN CULTUREEL PLANBUREAU&quot;">
       <data key="d3">8.0</data>
       <data key="d4">"Het SCP past kwantitatief onderzoek toe om objectieve gegevens te verzamelen en analyses uit te voeren."</data>
