@@ -1,28 +1,3 @@
-accelerate
-aioboto3
-aiohttp
-
-# database packages
-graspologic
-hnswlib
-nano-vectordb
-neo4j
 networkx
-ollama
-openai
-oracledb
-psycopg[binary,pool]
-pymilvus
-pymongo
-pymysql
-pyvis
-# lmdeploy[all]
-sqlalchemy
-tenacity
-
-
-# LLM packages
+numpy
 tiktoken
-torch
-transformers
-xxhash

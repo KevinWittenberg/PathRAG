@@ -15,8 +15,6 @@ import xml.etree.ElementTree as ET
 import numpy as np
 import tiktoken
 
-from PathRAG.prompt import PROMPTS
-
 
 class UnlimitedSemaphore:
 
@@ -361,8 +359,11 @@ async def get_best_cached_response(
     if best_similarity > similarity_threshold:
 
         if use_llm_check and llm_func and original_prompt and best_prompt:
-            compare_prompt = PROMPTS["similarity_check"].format(
-                original_prompt=original_prompt, cached_prompt=best_prompt
+            compare_prompt = (
+                "Rate the semantic similarity (0-1) between the following two prompts:\n"
+                f"Prompt A: {original_prompt}\n"
+                f"Prompt B: {best_prompt}\n"
+                "Answer with only a number."
             )
 
             try:
