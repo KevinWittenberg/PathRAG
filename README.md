@@ -1,83 +1,47 @@
-The code for the paper **"PathRAG: Pruning Graph-based Retrieval Augmented Generation with Relational Paths"**.
+# PathRAG Retrieval
+
+Standalone retrieval stage for the paper **"PathRAG: Pruning Graph-based Retrieval Augmented Generation with Relational Paths"**. The package queries a knowledge graph, ranks relational paths and gathers supporting text chunks to build context for language model prompts.
+
 ## Install
+
 ```bash
-cd PathRAG
-pip install -e .
-```
-## Quick Start
-* You can quickly experience this project in the `v1_test.py` file.
-* Set OpenAI API key in environment if using OpenAI models: `api_key="sk-...".` in the `v1_test.py` and `llm.py` file
-* Prepare your retrieval document "text.txt".
-* Use the following Python snippet in the "v1_text.py" file to initialize PathRAG and perform queries.
-  
-```python
-import os
-from PathRAG import PathRAG, QueryParam
-from PathRAG.llm import gpt_4o_mini_complete
-
-WORKING_DIR = "./your_working_dir"
-api_key="your_api_key"
-os.environ["OPENAI_API_KEY"] = api_key
-base_url="https://api.openai.com/v1"
-os.environ["OPENAI_API_BASE"]=base_url
-
-
-if not os.path.exists(WORKING_DIR):
-    os.mkdir(WORKING_DIR)
-
-rag = PathRAG(
-    working_dir=WORKING_DIR,
-    llm_model_func=gpt_4o_mini_complete,  
-)
-
-data_file="./text.txt"
-question="your_question"
-with open(data_file) as f:
-    rag.insert(f.read())
-
-print(rag.query(question, param=QueryParam(mode="hybrid")))
+pip install -r requirements.txt
 ```
 
+## Usage
 
-## Standalone Retrieval
-PathRAG's graph/path retrieval stage can now be used independently of the
-ingestion pipeline. The logic lives in `PathRAG/retrieval.py` and depends on a
-`RetrievalConfig` defined in `PathRAG/retrieval_config.py` which lists the
-knowledge-graph, entity vector store and text chunk store connections.
+Implement the storage interfaces in `PathRAG/base.py` for your own knowledge graph, entity vector store and text chunk store. Instantiate these backends and pass them to `RetrievalConfig` from `PathRAG/retrieval_config.py`.
 
 ```python
 import asyncio
-from PathRAG.retrieval import get_context
-from PathRAG.retrieval_config import RetrievalConfig, DEFAULT_QUERY_PARAM
+from PathRAG import (
+    DEFAULT_QUERY_PARAM,
+    RetrievalConfig,
+    get_context,
+)
 
-# graph, entity_store and text_store should be your implementations of the
-# BaseGraphStorage/BaseVectorStorage/BaseKVStorage interfaces.
+# graph, entity_store and text_store are your implementations of the
+# BaseGraphStorage, BaseVectorStorage and BaseKVStorage interfaces.
 config = RetrievalConfig(graph, entity_store, text_store, DEFAULT_QUERY_PARAM)
 
-context = asyncio.run(get_context("your_question", config))
+context = asyncio.run(get_context("your question", config))
+print(context)
 ```
 
-The resulting `context` string is ready to be inserted into the `{context}`
-portion of your LLM prompt.
+The `get_context` function returns a string containing entity summaries, relation paths and related text chunks. Insert this string into the `{context}` portion of your LLM prompt.
 
-## Parameter modification
-You can adjust the relevant parameters in the `base.py` and `operate.py` files.
+## Code structure
 
-## Batch Insert
-```python
-import os
-folder_path = "your_folder_path"  
-
-txt_files = [f for f in os.listdir(folder_path) if f.endswith(".txt")]
-for file_name in txt_files:
-    file_path = os.path.join(folder_path, file_name)
-    with open(file_path, "r", encoding="utf-8") as file:
-        rag.insert(file.read())
-```
+- `base.py` – abstract storage interfaces and query parameters.
+- `retrieval.py` – graph and text retrieval routines.
+- `retrieval_config.py` – configuration container used to wire in your storage backends.
+- `utils.py` – helper utilities.
 
 ## Cite
+
 Please cite our paper if you use this code in your own work:
-```python
+
+```bibtex
 @article{chen2025pathrag,
   title={PathRAG: Pruning Graph-based Retrieval Augmented Generation with Relational Paths},
   author={Chen, Boyu and Guo, Zirui and Yang, Zidan and Chen, Yuluo and Chen, Junze and Liu, Zhenghao and Shi, Chuan and Yang, Cheng},

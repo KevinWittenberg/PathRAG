@@ -38,8 +38,8 @@ DEFAULT_QUERY_PARAM = QueryParam()
 # Consumers are expected to build concrete storage instances and populate the
 # RetrievalConfig, for example:
 #
-# from PathRAG.storage import NetworkXStorage, NanoVectorDBStorage, JsonKVStorage
-# from PathRAG.llm import OpenAIEmbedding
+# from your_project.storage import NetworkXStorage, NanoVectorDBStorage, JsonKVStorage
+# from your_project.embedding import OpenAIEmbedding
 #
 # embedding = OpenAIEmbedding("text-embedding-3-large")
 # graph = NetworkXStorage(namespace="kg", global_config={"working_dir": "."})
