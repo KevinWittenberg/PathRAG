@@ -37,6 +37,29 @@ with open(data_file) as f:
 
 print(rag.query(question, param=QueryParam(mode="hybrid")))
 ```
+
+
+## Standalone Retrieval
+PathRAG's graph/path retrieval stage can now be used independently of the
+ingestion pipeline. The logic lives in `PathRAG/retrieval.py` and depends on a
+`RetrievalConfig` defined in `PathRAG/retrieval_config.py` which lists the
+knowledge-graph, entity vector store and text chunk store connections.
+
+```python
+import asyncio
+from PathRAG.retrieval import get_context
+from PathRAG.retrieval_config import RetrievalConfig, DEFAULT_QUERY_PARAM
+
+# graph, entity_store and text_store should be your implementations of the
+# BaseGraphStorage/BaseVectorStorage/BaseKVStorage interfaces.
+config = RetrievalConfig(graph, entity_store, text_store, DEFAULT_QUERY_PARAM)
+
+context = asyncio.run(get_context("your_question", config))
+```
+
+The resulting `context` string is ready to be inserted into the `{context}`
+portion of your LLM prompt.
+
 ## Parameter modification
 You can adjust the relevant parameters in the `base.py` and `operate.py` files.
 
