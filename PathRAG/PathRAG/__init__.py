@@ -1,3 +1,5 @@
-from .PathRAG import PathRAG as PathRAG, QueryParam as QueryParam
+"""Public API for the simplified PathRAG retriever."""
 
+from .PathRAG import PathRAG, RetrieverConfig
 
+__all__ = ["PathRAG", "RetrieverConfig"]

@@ -1,135 +1,57 @@
-from dataclasses import dataclass, field
-from typing import TypedDict, Union, Literal, Generic, TypeVar
+"""Core data models for the simplified PathRAG retriever."""
+from __future__ import annotations
 
-import numpy as np
-
-from .utils import EmbeddingFunc
-
-TextChunkSchema = TypedDict(
-    "TextChunkSchema",
-    {"tokens": int, "content": str, "full_doc_id": str, "chunk_order_index": int},
-)
-
-T = TypeVar("T")
+from dataclasses import dataclass
+from typing import List, Optional
 
 
-@dataclass
-class QueryParam:
-    mode: Literal["hybrid"] = "global"
-    only_need_context: bool = False
-    only_need_prompt: bool = False
-    response_type: str = "Multiple Paragraphs"
-    stream: bool = False
-    top_k: int =40
-    max_token_for_text_unit: int = 4000
-    max_token_for_global_context: int = 3000
-    max_token_for_local_context: int = 5000
+@dataclass(frozen=True)
+class EntityMatch:
+    """Represents a node match returned from the entity vector index."""
+
+    name: str
+    type: Optional[str]
+    description: str
+    score: float
 
 
-@dataclass
-class StorageNameSpace:
-    namespace: str
-    global_config: dict
+@dataclass(frozen=True)
+class RelationMatch:
+    """Represents an edge match returned from the relation vector index."""
 
-    async def index_done_callback(self):
-       
-        pass
-
-    async def query_done_callback(self):
-        
-        pass
+    source_name: str
+    target_name: str
+    description: str
+    keywords: str
+    score: float
 
 
-@dataclass
-class BaseVectorStorage(StorageNameSpace):
-    embedding_func: EmbeddingFunc
-    meta_fields: set = field(default_factory=set)
+@dataclass(frozen=True)
+class ChunkMatch:
+    """Represents a chunk retrieved from the chunk vector index."""
 
-    async def query(self, query: str, top_k: int) -> list[dict]:
-        raise NotImplementedError
-
-    async def upsert(self, data: dict[str, dict]):
-
-        raise NotImplementedError
+    chunk_uuid: str
+    document_id: str
+    filename: str
+    text: str
+    score: float
 
 
-@dataclass
-class BaseKVStorage(Generic[T], StorageNameSpace):
-    embedding_func: EmbeddingFunc
+@dataclass(frozen=True)
+class ContextWindow:
+    """A context window summarising graph and chunk evidence."""
 
-    async def all_keys(self) -> list[str]:
-        raise NotImplementedError
-
-    async def get_by_id(self, id: str) -> Union[T, None]:
-        raise NotImplementedError
-
-    async def get_by_ids(
-        self, ids: list[str], fields: Union[set[str], None] = None
-    ) -> list[Union[T, None]]:
-        raise NotImplementedError
-
-    async def filter_keys(self, data: list[str]) -> set[str]:
-        
-        raise NotImplementedError
-
-    async def upsert(self, data: dict[str, T]):
-        raise NotImplementedError
-
-    async def drop(self):
-        raise NotImplementedError
+    label: str
+    text: str
+    score: float
 
 
-@dataclass
-class BaseGraphStorage(StorageNameSpace):
-    embedding_func: EmbeddingFunc = None
+@dataclass(frozen=True)
+class RetrievalResult:
+    """Structured output returned by :class:`PathRAG`."""
 
-    async def has_node(self, node_id: str) -> bool:
-        raise NotImplementedError
-
-    async def has_edge(self, source_node_id: str, target_node_id: str) -> bool:
-        raise NotImplementedError
-
-    async def node_degree(self, node_id: str) -> int:
-        raise NotImplementedError
-
-    async def edge_degree(self, src_id: str, tgt_id: str) -> int:
-        raise NotImplementedError
-    
-    async def get_pagerank(self,node_id:str) -> float:
-        raise NotImplementedError
-
-    async def get_node(self, node_id: str) -> Union[dict, None]:
-        raise NotImplementedError
-
-    async def get_edge(
-        self, source_node_id: str, target_node_id: str
-    ) -> Union[dict, None]:
-        raise NotImplementedError
-
-    async def get_node_edges(
-        self, source_node_id: str
-    ) -> Union[list[tuple[str, str]], None]:
-        raise NotImplementedError
-    
-    async def get_node_in_edges(
-        self,source_node_id:str
-    ) -> Union[list[tuple[str,str]],None]:
-        raise NotImplementedError
-    async def get_node_out_edges(
-        self,source_node_id:str
-    ) -> Union[list[tuple[str,str]],None]:
-        raise NotImplementedError
-
-    async def upsert_node(self, node_id: str, node_data: dict[str, str]):
-        raise NotImplementedError
-
-    async def upsert_edge(
-        self, source_node_id: str, target_node_id: str, edge_data: dict[str, str]
-    ):
-        raise NotImplementedError
-
-    async def delete_node(self, node_id: str):
-        raise NotImplementedError
-
-    async def embed_nodes(self, algorithm: str) -> tuple[np.ndarray, list[str]]:
-        raise NotImplementedError("Node embedding is not used in PathRag.")
+    answer: str
+    context_windows: List[ContextWindow]
+    entity_matches: List[EntityMatch]
+    relation_matches: List[RelationMatch]
+    chunk_matches: List[ChunkMatch]
