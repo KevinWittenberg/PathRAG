@@ -1,5 +1,27 @@
 """Public API for the simplified PathRAG retriever."""
 
-from .PathRAG import PathRAG, RetrieverConfig
+from .pathrag import (
+    AsyncChat,
+    ChunkMatch,
+    ContextWindow,
+    EntityMatch,
+    PathRAG,
+    RelationMatch,
+    RetrieverConfig,
+    RetrievalResult,
+    StorageAdapter,
+    StoragePaths,
+)
 
-__all__ = ["PathRAG", "RetrieverConfig"]
+__all__ = [
+    "PathRAG",
+    "RetrieverConfig",
+    "StorageAdapter",
+    "StoragePaths",
+    "AsyncChat",
+    "RetrievalResult",
+    "ContextWindow",
+    "EntityMatch",
+    "RelationMatch",
+    "ChunkMatch",
+]
